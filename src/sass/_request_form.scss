@@ -3,6 +3,7 @@
   border-radius: 10px;
   padding: 20px;
   display: flex;
+  gap: 12px;
 }
 
 .form {
@@ -18,9 +19,9 @@
     flex-direction: column;
     margin-bottom: 10px;
 
-    &:nth-child(4) {
-      margin-bottom: 0;
-    }
+    // &:nth-child(4) {
+    //   margin-bottom: 0;
+    // }
   }
 
   &__label {
@@ -39,7 +40,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding: 11px 12px 11px 42px;
+    padding: 11px 12px 11px 30px;
     outline: none;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,20 +62,21 @@
   &__input-icon {
     position: absolute;
     z-index: 1;
-    top: 50%;
-    left: 12px;
+    top: 15px;
+    left: 8px;
+    // left: 12px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .form__input:hover + &,
     .form__input:focus + & {
-      fill: var(--button-bg-color);
+      fill: $accentColor;
     }
 
     .form__field:hover &,
     .form__field:focus & {
       cursor: pointer;
-      fill: var(--button-bg-color);
+      fill: $accentColor;
     }
   }
 
@@ -102,7 +104,7 @@
     &:hover,
     &:focus {
       cursor: pointer;
-      border: 1px solid var(--button-bg-color);
+      border: 1px solid $accentColor;
     }
   }
 
@@ -130,9 +132,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+    // justify-content: space-between;
 
-    width: 370px;
+    // width: 370px;
     font-size: 12px;
     line-height: 1.16;
     cursor: pointer;
@@ -170,7 +173,7 @@
 
   @media screen and (min-width: $widthDesktop) {
     &__label {
-      width: 425px;
+      //   width: 425px;
       font-size: 14px;
       line-height: 1.71;
     }
@@ -228,7 +231,6 @@
   }
 
   &__form-frame {
-    position: absolute;
     padding: 40px;
     display: flex;
     flex-direction: column;
