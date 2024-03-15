@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  // padding: 30px 10px;
 }
 
 .modal-content {
@@ -153,3 +153,89 @@
   padding: 4px 10px;
   border-radius: 4px;
 }
+
+// .modal {
+//   // position: absolute;
+
+//   top: 50%;
+//   left: 50%;
+
+//   width: 450px;
+//   min-height: 609px;
+//   border-radius: 4px;
+
+//   background-color: var(--primary-bg-color);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   opacity: 1;
+
+//   &__backdrop--is-hidden {
+//     transform: translate(-50%, -50%) scale(0.5);
+//     opacity: 0;
+//     pointer-events: none;
+//   }
+
+//   &__button--close {
+//     position: absolute;
+//     z-index: 1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     background: #ffffff;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     margin-top: 8px;
+//     margin-left: 412px;
+//     cursor: pointer;
+//   }
+
+//   &__icon--close {
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     .modal__button--close:hover &,
+//     .modal__button--close:focus & {
+//       fill: var(--button-bg-color);
+//     }
+//   }
+
+//   &__form-frame {
+//     // position: absolute;
+//     // padding: 40px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   &__title {
+//     font-family: inherit;
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1.5;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--title-txt-color);
+//     margin-bottom: 12px;
+//   }
+
+//   @media screen and (min-width: $widthDesktop) {
+//     width: 528px;
+//     min-height: 581px;
+
+//     &__button--close {
+//       margin-left: 490px;
+//     }
+
+//     &__form-frame {
+//       padding: 35px;
+//     }
+
+//     &__title {
+//       line-height: 1.15;
+//     }
+//   }
+// }

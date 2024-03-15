@@ -70,7 +70,7 @@
 
 .nav_item--current::after {
   content: '';
-  color: #ff001b;
+  color: $accentColor;
   right: 0;
   bottom: -1px;
   display: block;
