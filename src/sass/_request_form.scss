@@ -1,16 +1,25 @@
 .wrapper {
-  border: 1px solid grey;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(179, 176, 176, 0.149);
   border-radius: 10px;
   padding: 20px;
-  display: flex;
+
   gap: 12px;
+
+  margin-bottom: 12px;
+
+  @media screen and (min-width: $widthTablet) {
+    display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 370px;
+  //   width: 370px;
 
   &__field {
     position: relative;
@@ -34,6 +43,12 @@
     &:active &__input {
       outline: none;
     }
+  }
+
+  &__label--comment {
+    font-size: 14px;
+    line-height: 20px;
+    color: $accentColor;
   }
 
   &__input {
@@ -90,7 +105,7 @@
     letter-spacing: 0.01em;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 12px 16px;
     margin-bottom: 20px;
     outline: none;
