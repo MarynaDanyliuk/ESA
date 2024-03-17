@@ -1,16 +1,20 @@
 .button {
   border: 1px solid white;
+  color: white;
   border-radius: 8px;
   background-color: transparent;
   cursor: pointer;
   min-width: 30px;
-  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-transform: uppercase;
 }
 
 .btn-modal {
   border: 1px solid $textColor;
-  border-radius: 4px;
   color: $textColor;
 
   &:last-child {
@@ -25,18 +29,21 @@
   }
 
   width: 100%;
+  max-width: 140px;
   height: 44px;
-  @media (min-width: $widthTablet) {
-    max-width: 125px;
-  }
-  @media (min-width: $widthDesktop) {
-    max-width: 136px;
-  }
+  // @media (min-width: $widthTablet) {
+  //   max-width: 160px;
+  // }
+  // @media (min-width: $widthDesktop) {
+
+  // }
 }
 
-.white{
+.white {
   border-color: white;
   color: white;
+  gap: 8px;
+  padding: 8px;
 }
 
 .btn-modal-auth {
