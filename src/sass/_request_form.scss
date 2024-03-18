@@ -1,12 +1,20 @@
 .form-frame {
   width: 100%;
-  //   max-width: 680px;
+
+  font-size: 14px;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
+
+  //   flex-direction: column;
+}
+
+.form-body {
+  @media screen and (min-width: $widthTablet) {
+    width: 680px;
+  }
   @media screen and (min-width: $widthDesktop) {
-    padding: 0 200px;
+    width: 980px;
   }
 }
 .wrapper {
@@ -19,7 +27,7 @@
 
   margin-bottom: 12px;
 
-  @media screen and (min-width: $widthTablet) {
+  @media screen and (min-width: $widthDesktop) {
     display: flex;
   }
 }
@@ -43,8 +51,8 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--primary-txt-color);
-    margin-bottom: 4px;
+    color: $textColor;
+    // margin-bottom: 4px;
 
     &:active &__input {
       outline: none;
@@ -58,6 +66,7 @@
   }
 
   &__input {
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -102,11 +111,13 @@
   }
 
   &__comment-area {
-    resize: none;
+    resize: vertical;
     width: 100%;
-    height: 120px;
+    min-height: 120px;
+    height: fit-content;
 
     font-family: inherit;
+
     line-height: 1.16;
     letter-spacing: 0.01em;
 
@@ -127,10 +138,6 @@
       cursor: pointer;
       border: 1px solid $accentColor;
     }
-  }
-
-  @media screen and (min-width: $widthTablet) {
-    width: 448px;
   }
 }
 
@@ -203,9 +210,13 @@
 
 .form_checkbox {
   display: flex;
-  padding: 16px 0;
-  //   justify-items: start;
-  //   text-align: end;
+
+  height: 40px;
+  padding: 16px 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .modal {
