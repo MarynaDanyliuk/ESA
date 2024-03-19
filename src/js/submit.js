@@ -52,14 +52,14 @@ import { refs } from './refs';
         body: JSON.stringify(formData),
       });
 
-      clearForm();
+      // clearForm();
 
-      // if (response.ok) {
-      //   console.log('Лист успішно відправлено');
-      //   clearForm();
-      // } else {
-      //   console.error('Помилка відправки листа');
-      // }
+      if (response.ok) {
+        console.log('Лист успішно відправлено');
+        clearForm();
+      } else {
+        console.error('Помилка відправки листа');
+      }
     } catch (error) {
       console.error('Помилка відправки листа:', error);
     }

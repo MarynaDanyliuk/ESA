@@ -4,9 +4,9 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
-// require('dotenv').config();
+require('dotenv').config();
 
-// const { META_PASSWORD, EMAIL_FROM } = process.env;
+const { META_PASSWORD, EMAIL_FROM } = process.env;
 
 const app = express();
 
@@ -28,8 +28,8 @@ const nodemailerConfig = {
   port: 465, // 25, 465, 2525
   secure: true,
   auth: {
-    user: 'marydanyliuk@meta.ua',
-    pass: 'Mary1111',
+    user: EMAIL_FROM,
+    pass: META_PASSWORD,
   },
 };
 
@@ -51,7 +51,7 @@ async function sendEmail(formData) {
   } = formData;
 
   const mailOptions = {
-    from: 'marydanyliuk@meta.ua',
+    from: EMAIL_FROM,
     to: 'manfimova@gmail.com',
     subject: `Нова форма з сайту ESA від ${name}`,
     text: `
