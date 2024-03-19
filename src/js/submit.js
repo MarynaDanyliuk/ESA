@@ -58,7 +58,7 @@ import { refs } from './refs';
         console.log('Лист успішно відправлено');
         clearForm();
       } else {
-        console.error('Помилка відправки листа');
+        console.error('Помилка відправки листа', response.statusText);
       }
     } catch (error) {
       console.error('Помилка відправки листа:', error);
