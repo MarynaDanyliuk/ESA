@@ -8,6 +8,8 @@ require('dotenv').config();
 
 const { META_PASSWORD, EMAIL_FROM } = process.env;
 
+console.log(META_PASSWORD, EMAIL_FROM);
+
 const app = express();
 
 const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
