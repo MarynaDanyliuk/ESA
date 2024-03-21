@@ -90,7 +90,13 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  // --color1: #ff0000;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    stroke: $accentColor;
+    fill: $accentColor;
+  }
 }
 
 .delete {
@@ -100,19 +106,16 @@
   z-index: 5;
 }
 
-svg:not(:root) {
-  overflow: visible;
-}
-
-#open_burger_btn {
+.icon_menu {
+  width: 20px;
+  height: 20px;
   @media (min-width: $widthTablet) {
     display: none;
   }
-}
-
-#auth_btn {
-  @media (min-width: $widthTablet) {
-    margin-top: 12px;
+  &:hover {
+    cursor: pointer;
+    fill: $accentColor;
+    stroke: $accentColor;
   }
 }
 
@@ -131,3 +134,7 @@ svg:not(:root) {
     width: 152px;
   }
 }
+
+// svg:not(:root) {
+//   overflow: visible;
+// }
