@@ -20,17 +20,17 @@ export const refs = {
   // modalBackdrop: document.querySelectorAll(`.modal-body`),
 
   // ______________Header__________________________
-  // headerNavLinks: document.querySelectorAll('.nav_item'),
-  // headerNavButtons: document.querySelector('.nav_list_button'),
-  // buttonWatched: document.getElementById('watched'),
-  // buttonQueue: document.getElementById('queue'),
-  // butttonsLibrary: document.querySelector('.modal-nav'),
-  // buttonHeaderNav: document.querySelector('.nav_list_button'),
-  // logo: document.querySelector('.logo'),
-  // homeBtn: document.getElementById(`home_btn`),
-  // libraryBtn: document.getElementById(`library_btn`),
-  // signOut: document.getElementById('auth_btn'),
-  // user: document.querySelector('.user'),
+  headerNavLinks: document.querySelectorAll('.nav_item'),
+  headerNavButtons: document.querySelector('.nav_list_button'),
+  buttonWatched: document.getElementById('watched'),
+  buttonQueue: document.getElementById('queue'),
+  butttonsLibrary: document.querySelector('.modal-nav'),
+  buttonHeaderNav: document.querySelector('.nav_list_button'),
+  logo: document.querySelector('.logo'),
+  homeBtn: document.getElementById(`home_btn`),
+  libraryBtn: document.getElementById(`library_btn`),
+  signOut: document.getElementById('auth_btn'),
+  user: document.querySelector('.user'),
 };
 
 // export const refs = {

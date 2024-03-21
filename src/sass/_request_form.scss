@@ -76,6 +76,13 @@
       cursor: pointer;
       border: 1px solid $accentColor;
     }
+
+    &:invalid {
+      box-shadow: 0 0 5px 1px red;
+    }
+    &:valid {
+      box-shadow: 0 0 5px 1px green;
+    }
   }
 
   &__input-icon {
