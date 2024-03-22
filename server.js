@@ -14,8 +14,15 @@ const app = express();
 
 const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
 
+// const corsOptions = {
+//   origin: 'http://localhost:61224',
+// };
+
+// app.use(cors(corsOptions));
+
 app.use(logger(formatsLogger));
 app.use(cors());
+// app.options('*', cors());
 app.use(express.json());
 app.use(express.static('public'));
 const PORT = process.env.PORT || 3000;
