@@ -77,12 +77,14 @@
       border: 1px solid $accentColor;
     }
 
-    &:invalid {
-      box-shadow: 0 0 5px 1px red;
-    }
-    &:valid {
-      box-shadow: 0 0 5px 1px green;
-    }
+    // &:invalid {
+    //   border: 2px solid red;
+    //   // box-shadow: 0 0 5px 1px red;
+    // }
+    // &:focus:valid {
+    //   border: 2px solid green;
+    //   // box-shadow: 0 0 5px 1px green;
+    // }
   }
 
   &__input-icon {
