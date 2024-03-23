@@ -52,6 +52,8 @@ import { refs } from './refs';
         body: JSON.stringify(formData),
       });
 
+      // console.log(response);
+
       // if (response.ok) {
       //   console.log('Лист успішно відправлено');
       //   clearForm();
