@@ -67,6 +67,12 @@
     }
   }
 
+  &__overlay:hover {
+    color: aqua;
+    fill: aqua;
+    cursor: pointer;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 30px;
